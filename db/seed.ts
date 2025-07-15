@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import sampleData from './sample-data';
 import { hash } from '@/lib/encrypt';
+import 'dotenv/config';
 
 async function main() {
   const prisma = new PrismaClient();
